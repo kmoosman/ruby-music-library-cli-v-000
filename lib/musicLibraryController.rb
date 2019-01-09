@@ -10,7 +10,7 @@ class MusicLibraryController
   end
 
   def call
-    system 'clear'
+    # system 'clear'
     while input != "exit"
     puts "Welcome to your music library!"
     puts "Your options are 'list songs', 'list artists', 'list genres', 'play song', 'list artist' and 'list genre' "
