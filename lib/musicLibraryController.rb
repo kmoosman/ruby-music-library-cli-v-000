@@ -39,7 +39,8 @@ class MusicLibraryController
           list_genre	        list_genre
         when "play song"
           play_song
-        end	      end
+        end
+      end
     # until input.chomp == 'exit'
     #   input = gets
     # end
