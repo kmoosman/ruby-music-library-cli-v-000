@@ -24,12 +24,25 @@ class MusicLibraryController
     puts "What would you like to do?"
     input = gets
     case input
-    when 'list_songs'
-      list_songs
-    end
-    until input.chomp == 'exit'
-      input = gets
-    end
+      case answer
+        when "list songs"	      when 'list songs'
+          songs	        list_songs
+        when "list artists"	      when 'list artists'
+          artists	        artists
+        when "list genres"	      when 'list genres'
+          genres	        genres
+        when "list artist"	      when 'play song'
+          play_song
+        when 'list artist'
+          list_artist	        list_artist
+        when "list genre"	      when 'list genre'
+          list_genre	        list_genre
+        when "play song"
+          play_song
+        end	      end
+    # until input.chomp == 'exit'
+    #   input = gets
+    # end
   end
 
   def list_songs
