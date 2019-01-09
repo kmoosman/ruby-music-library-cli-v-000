@@ -119,6 +119,4 @@ class MusicLibraryController
       puts "Playing #{songs_by_name[input].name} by #{songs_by_name[input].artist.name}" unless songs_by_name[input] == nil
     end
   end
-
-
 end
