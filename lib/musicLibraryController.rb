@@ -34,6 +34,8 @@ class MusicLibraryController
       list_songs_by_genre
     when 'play song'
       play_song
+    when 'list artist'
+      list_songs_by_artist
     end
     until input.chomp == 'exit'
       input = gets
