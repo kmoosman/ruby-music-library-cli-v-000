@@ -117,7 +117,7 @@ class MusicLibraryController
     song_name = songs_by_name[input]
     if song_selected > 0
       if songs_by_name[input] != nil
-        puts "Playing #{songs_by_name[input].name} by #{songs_by_name[input].artist.name}" 
+        puts "Playing #{songs_by_name[input].name} by #{songs_by_name[input].artist.name}" unless songs_by_name[input] == nil
       end
     end
 
