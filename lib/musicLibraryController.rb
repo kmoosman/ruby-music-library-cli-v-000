@@ -26,6 +26,14 @@ class MusicLibraryController
     case input
     when 'list songs'
       list_songs
+    when 'list genres'
+      list_genres
+    when 'list artist'
+      list_artists
+    when 'list genre'
+      list_songs_by_genre
+    when 'play song'
+      play_song
     end
     until input.chomp == 'exit'
       input = gets
