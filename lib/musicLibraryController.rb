@@ -118,21 +118,6 @@ class MusicLibraryController
     if song_selected > 0
       puts "Playing #{songs_by_name[input].name} by #{songs_by_name[input].artist.name}" unless songs_by_name[input] == nil
     end
-
-
-
-    # songs_by_name = Song.all.collect.sort_by do |song|
-    #   song.name
-    #  end
-    # song_number = song_selected.to_i
-    # if song_selected.to_i > 0
-    #   if list_songs.contains[song_selected]
-    #     puts "Playing " unless song_selected == nil
-    #   end
-    #   {songs_by_name}
-    # else
-    #   puts "Which song number would you like to play?"
-    # end
   end
 
 
